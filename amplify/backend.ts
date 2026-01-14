@@ -59,7 +59,7 @@ userPool.addClient("NativeAppClient", {
 });
 const s3Bucket = backend.storage.resources.cfnResources.cfnBucket;
 // Use this bucket name post refactor
-// s3Bucket.bucketName = 'productcatalogd4ffc6fd926f4285b3a12edc8e7c883ef086b-main';
+s3Bucket.bucketName = 'productcatalogd4ffc6fd926f4285b3a12edc8e7c883ef086b-main';
 s3Bucket.bucketEncryption = {
     serverSideEncryptionConfiguration: [
         {
